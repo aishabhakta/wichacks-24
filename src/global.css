@@ -44,7 +44,7 @@ html {
   opacity: 1;
 }
 
-/* Global styles for HomePage */
+/* Styles for HomePage */
 .homePage {
   padding: 16px;
 }
@@ -151,4 +151,83 @@ html {
   font-family: "Lexend", sans-serif;
   font-size: large;
   color: #393158;
+}
+
+/* Styles for Community */
+
+.community-page {
+  padding: 20px;
+}
+
+.community-heading .community-title {
+  margin-top: 37px;
+  margin-bottom: 8px;
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+}
+
+.group-heading .group-topics-title {
+  margin-bottom: 16px;
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+  border-bottom: none;
+}
+
+.search-bar-box {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  border-radius: 70px;
+}
+
+.search-bar-box .searchBar {
+  border-radius: 10px;
+}
+
+.search-icon {
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+.forum-card-container {
+  margin-bottom: 70px;
+}
+
+.forum-card-container .forum-card {
+  background-color: #e8dbcc;
+  box-shadow: 2px 2px 2px rgb(180, 180, 180);
+  border-radius: 20px;
+}
+
+.forum-card .forum-card-title {
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+  text-decoration: none;
+}
+
+.forum-card .forum-card-members {
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+  text-decoration: none;
+}
+
+.forum-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 2px 4px 4px rgb(180, 180, 180);
+}
+
+.forum-card a:hover {
+  text-decoration: none;
+}
+
+.forum-card .emoji-styles {
+  font-size: 80px;
+  justify-content: start;
+}
+
+.forum-link,
+.forum-link:hover,
+.forum-link:focus {
+  text-decoration: none;
 }
