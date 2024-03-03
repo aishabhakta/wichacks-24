@@ -44,7 +44,7 @@ html {
   opacity: 1;
 }
 
-/* Global styles for HomePage */
+/* Styles for HomePage */
 .homePage {
   padding: 16px;
 }
@@ -81,20 +81,20 @@ html {
 
 .quoteContainer .inspirationalQuote {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
   font-weight: 400;
   color: #393158;
   font-family: "Lexend", sans-serif;
 }
 
 .fruitContainer {
-  text-align: center; /* Center the emoji horizontally */
-  margin: 20px 0; /* Add some vertical spacing */
+  text-align: center;
+  margin-top: 20px;
 }
 
 .fruitContainer .fruit {
-  font-size: 7rem; /* Make the emoji larger */
-  text-shadow: 4px 8px 15px rgb(116, 116, 116); /* Add a subtle shadow */
+  font-size: 7rem;
+  text-shadow: 4px 8px 15px rgb(116, 116, 116);
 }
 
 .progressCard,
@@ -116,7 +116,7 @@ html {
 
 .progressContainer .progressCard .progressInfo2 {
   font-family: "Lexend", sans-serif;
-  font-size: medium;
+  font-size: large;
   color: #393158;
 }
 
@@ -124,6 +124,10 @@ html {
   font-family: "Lexend", sans-serif;
   font-size: medium;
   color: #393158;
+}
+
+.symptomsContainer {
+  margin-bottom: 80px;
 }
 
 .symptomsContainer .symptomsCard {
@@ -139,57 +143,12 @@ html {
 
 .symptomsContainer .symptomsCard .symptomsInfo2 {
   font-family: "Lexend", sans-serif;
-  font-size: medium;
+  font-size: large;
   color: #393158;
 }
 
-/* Global styles for ToolsPage */
-.toolsPage {
-  padding: 16px;
-}
-
-.toolsPage .tools {
-  font-size: 3.5rem;
-  font-weight: 500;
-  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
-  color: #694e84;
-  margin-top: 30px;
-  margin-left: 10px;
-}
-
-.toolsContainer {
-  margin-top: 20px;
-}
-
-.toolsContainer .toolsCard {
-  display: grid;
-  border-radius: 30px;
-  background-color: #e8dbcc;
-  box-shadow: 3px 3px 4px grey;
-  grid-template-columns: 1fr 5fr;
-  grid-template-areas: 'gridIcon gridText';
-  justify-items: center;
-  align-items: center;
-}
-
-.toolsContainer .toolsCard .gridIcon {
-  grid-area: gridIcon;
-  margin-left: 2.3rem;
-}
-
-.toolsContainer .toolsCard .gridText {
-  grid-area: gridText;
-}
-
-.toolsContainer .toolsCard .gridText .subsectionTitle {
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
-  color: #694e84;
-}
-
-.toolsContainer .toolsCard .gridText .toolsInfo {
+.symptomsContainer .symptomsCard .symptomsInfo3 {
   font-family: "Lexend", sans-serif;
-  font-size: medium;
+  font-size: large;
   color: #393158;
 }
