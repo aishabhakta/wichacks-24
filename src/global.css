@@ -1,0 +1,77 @@
+/* Global styles */
+body {
+  background-color: #f5f5f5;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Adjusted from min-height to height to ensure it fills the viewport but doesn't extend beyond it unless content does */
+  width: 100%; /* Ensure full width */
+  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.custom-bottom-nav-action .MuiBottomNavigationAction-label {
+  font-family: "Lexend", sans-serif;
+  color: black;
+}
+
+.custom-bottom-nav-action .Mui-selected .MuiBottomNavigationAction-label {
+  color: grey;
+}
+
+.custom-bottom-nav-action .MuiSvgIcon-root {
+  color: black;
+}
+
+.custom-bottom-nav-action .Mui-selected .MuiSvgIcon-root {
+  color: grey;
+}
+
+/* Global styles for HomePage */
+.homePage {
+  padding: 16px;
+}
+
+.profileIconContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.welcomeMessage {
+  margin-left: 10px;
+}
+
+.welcomeMessage .welcomeBack {
+  font-size: 1.75rem;
+  font-weight: normal;
+  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+  color: #694e84;
+}
+
+.welcomeMessage .userName {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+  color: #694e84;
+}
+
+.profileIconButton .profileIcon {
+  color: black; /* Make the icon black */
+  font-size: 58px; /* Adjust the size as needed */
+}
+
+.quoteContainer .inspirationalQuote {
+  text-align: center;
+  margin-top: 20px;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+}
