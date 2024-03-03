@@ -231,3 +231,172 @@ html {
 .forum-link:focus {
   text-decoration: none;
 }
+
+/* Styles for Info */
+.info-page {
+  padding: 20px;
+}
+
+.info-heading .info-title {
+  margin-top: 37px;
+  margin-bottom: 14px;
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+}
+
+.articles-heading .articles-title,
+.explore-topics-heading .explore-topics-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+}
+
+.search-bar-box {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.articles-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding-bottom: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.articles-container .article-card {
+  border-radius: 20px;
+  background-color: #e8dbcc;
+  box-shadow: 2px 2px 2px rgb(180, 180, 180);
+}
+
+.article-card .info-article {
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+}
+
+.articles-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.articles-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.article-card {
+  min-width: 260px;
+  margin-right: 16px;
+}
+
+.topic-card {
+  height: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.explore-topics-container {
+  margin-bottom: 70px;
+}
+
+.explore-topics-container .topic-card {
+  border-radius: 20px;
+  background-color: #e8dbcc;
+  box-shadow: 2px 2px 2px rgb(180, 180, 180);
+}
+
+.topic-card .topic-title {
+  font-family: "Lexend", sans-serif;
+  color: #393158;
+}
+
+.topic-card .topic-content {
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+}
+
+.topic-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.topic-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.topic-content {
+  font-size: 14px;
+}
+
+/* Add responsive design for the grid layout */
+@media (max-width: 600px) {
+  .explore-topics-container .topic-card {
+    width: 100%;
+  }
+}
+
+/* Styles for Tools */
+
+.toolsPage {
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+.toolsPage .tools {
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+  margin-top: 37px;
+  margin-bottom: 15px;
+}
+
+.toolsContainer .toolsCard {
+  display: grid;
+  border-radius: 30px;
+  background-color: #e8dbcc;
+  box-shadow: 3px 3px 4px grey;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "gridIcon gridText";
+  justify-items: center;
+  align-items: center;
+}
+
+.toolsContainer .toolsCard .gridIcon {
+  grid-area: gridIcon;
+  margin-left: 2.3rem;
+}
+
+.toolsContainer .toolsCard .gridText {
+  grid-area: gridText;
+}
+
+.toolsContainer .toolsCard .gridText .subsectionTitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+  color: #694e84;
+  margin-bottom: 10px;
+}
+
+.toolsContainer .toolsCard .gridText .toolsInfo {
+  font-family: "Lexend", sans-serif;
+  font-size: medium;
+  color: #393158;
+}
+
+.toolsContainer .toolsCard {
+  margin-bottom: 10px;
+}
+
+.toolsPage .tools-section {
+  margin-bottom: 70px;
+}
+
+/* Change the color of all icons in the toolsCard */
+.toolsCard .gridIcon svg {
+  color: #694e84; /* Example: sets all icons to green */
+}
