@@ -96,7 +96,21 @@ function HomePage() {
               component="p"
               className="symptomsInfo2"
             >
-              List symptoms here...
+              <b>At 20 weeks, you may be experiencing:</b>
+            </Typography>
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              className="symptomsInfo3"
+            >
+              <b> </b>
+              <br />
+              Thicker hair and longer nails 💅
+              <br />
+              Tiredness 😴
+              <br />
+              Growing appetite 🍽️
             </Typography>
           </CardContent>
         </Card>

@@ -81,20 +81,20 @@ html {
 
 .quoteContainer .inspirationalQuote {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
   font-weight: 400;
   color: #393158;
   font-family: "Lexend", sans-serif;
 }
 
 .fruitContainer {
-  text-align: center; /* Center the emoji horizontally */
-  margin: 20px 0; /* Add some vertical spacing */
+  text-align: center;
+  margin-top: 20px;
 }
 
 .fruitContainer .fruit {
-  font-size: 7rem; /* Make the emoji larger */
-  text-shadow: 4px 8px 15px rgb(116, 116, 116); /* Add a subtle shadow */
+  font-size: 7rem;
+  text-shadow: 4px 8px 15px rgb(116, 116, 116);
 }
 
 .progressCard,
@@ -116,7 +116,7 @@ html {
 
 .progressContainer .progressCard .progressInfo2 {
   font-family: "Lexend", sans-serif;
-  font-size: medium;
+  font-size: large;
   color: #393158;
 }
 
@@ -124,6 +124,10 @@ html {
   font-family: "Lexend", sans-serif;
   font-size: medium;
   color: #393158;
+}
+
+.symptomsContainer {
+  margin-bottom: 80px;
 }
 
 .symptomsContainer .symptomsCard {
@@ -139,6 +143,12 @@ html {
 
 .symptomsContainer .symptomsCard .symptomsInfo2 {
   font-family: "Lexend", sans-serif;
-  font-size: medium;
+  font-size: large;
+  color: #393158;
+}
+
+.symptomsContainer .symptomsCard .symptomsInfo3 {
+  font-family: "Lexend", sans-serif;
+  font-size: large;
   color: #393158;
 }
