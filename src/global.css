@@ -6,9 +6,9 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%; /* Adjusted from min-height to height to ensure it fills the viewport but doesn't extend beyond it unless content does */
-  width: 100%; /* Ensure full width */
-  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+  height: 100%;
+  width: 100%;
+  font-family: "Lexend", sans-serif;
 }
 
 #root {
@@ -16,21 +16,32 @@ html {
   width: 100%;
 }
 
+.custom-bottom-nav-action {
+  padding: 10px;
+  border-radius: 100px;
+}
+
 .custom-bottom-nav-action .MuiBottomNavigationAction-label {
   font-family: "Lexend", sans-serif;
-  color: black;
+  font-size: medium;
+  color: #393158;
+  opacity: 0.65;
 }
 
 .custom-bottom-nav-action .Mui-selected .MuiBottomNavigationAction-label {
-  color: grey;
+  color: #393158;
+  font-size: medium;
+  opacity: 1;
 }
 
 .custom-bottom-nav-action .MuiSvgIcon-root {
-  color: black;
+  color: #393158;
+  opacity: 0.65;
 }
 
 .custom-bottom-nav-action .Mui-selected .MuiSvgIcon-root {
-  color: grey;
+  color: #393158;
+  opacity: 1;
 }
 
 /* Global styles for HomePage */
@@ -50,28 +61,84 @@ html {
 }
 
 .welcomeMessage .welcomeBack {
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   font-weight: normal;
-  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+  font-family: "Lexend", sans-serif;
   color: #694e84;
 }
 
 .welcomeMessage .userName {
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: bold;
-  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+  font-family: "Lexend", sans-serif;
   color: #694e84;
 }
 
 .profileIconButton .profileIcon {
-  color: black; /* Make the icon black */
-  font-size: 58px; /* Adjust the size as needed */
+  color: #393158;
+  font-size: 58px;
 }
 
 .quoteContainer .inspirationalQuote {
   text-align: center;
   margin-top: 20px;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+  font-weight: 400;
+  color: #393158;
+  font-family: "Lexend", sans-serif;
+}
+
+.fruitContainer {
+  text-align: center; /* Center the emoji horizontally */
+  margin: 20px 0; /* Add some vertical spacing */
+}
+
+.fruitContainer .fruit {
+  font-size: 7rem; /* Make the emoji larger */
+  text-shadow: 4px 8px 15px rgb(116, 116, 116); /* Add a subtle shadow */
+}
+
+.progressCard,
+.symptomsCard {
+  margin-top: 20px;
+  box-shadow: 0px 80px 2px black;
+}
+
+.progressContainer .progressCard {
+  border-radius: 30px;
+  background-color: #e8dbcc;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.progressContainer .progressCard .progressInfo1 {
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+}
+
+.progressContainer .progressCard .progressInfo2 {
+  font-family: "Lexend", sans-serif;
+  font-size: medium;
+  color: #393158;
+}
+
+.progressContainer .progressCard .progressInfo3 {
+  font-family: "Lexend", sans-serif;
+  font-size: medium;
+  color: #393158;
+}
+
+.symptomsContainer .symptomsCard {
+  border-radius: 30px;
+  background-color: #e8dbcc;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.symptomsContainer .symptomsCard .symptomsInfo1 {
+  font-family: "Lexend", sans-serif;
+  color: #694e84;
+}
+
+.symptomsContainer .symptomsCard .symptomsInfo2 {
+  font-family: "Lexend", sans-serif;
+  font-size: medium;
+  color: #393158;
 }
