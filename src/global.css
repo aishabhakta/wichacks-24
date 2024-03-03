@@ -157,3 +157,19 @@ html {
   margin-left: 10px;
 }
 
+.toolsContainer {
+  margin-top: 20px;
+}
+
+.toolsContainer .toolsCard {
+  border-radius: 30px;
+  background-color: #e8dbcc;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.toolsContainer .toolsCard .subsectionTitle {
+  font-size: 23px;
+  font-weight: 400;
+  font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
+  color: #694e84;
+}
