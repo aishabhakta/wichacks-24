@@ -162,14 +162,34 @@ html {
 }
 
 .toolsContainer .toolsCard {
+  display: grid;
   border-radius: 30px;
   background-color: #e8dbcc;
   box-shadow: 3px 3px 4px grey;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: 'gridIcon gridText';
+  justify-items: center;
+  align-items: center;
 }
 
-.toolsContainer .toolsCard .subsectionTitle {
-  font-size: 23px;
+.toolsContainer .toolsCard .gridIcon {
+  grid-area: gridIcon;
+  margin-left: 2.3rem;
+}
+
+.toolsContainer .toolsCard .gridText {
+  grid-area: gridText;
+}
+
+.toolsContainer .toolsCard .gridText .subsectionTitle {
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: "Lexend", sans-serif; /* Set Lexend as the default font */
   color: #694e84;
+}
+
+.toolsContainer .toolsCard .gridText .toolsInfo {
+  font-family: "Lexend", sans-serif;
+  font-size: medium;
+  color: #393158;
 }
