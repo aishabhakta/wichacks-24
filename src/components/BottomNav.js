@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BottomNavigation, BottomNavigationAction, Paper } from "@mui/material";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import ExploreIcon from "@mui/icons-material/Explore";
 import WindowIcon from "@mui/icons-material/Window";
 import CommunityIcon from "@mui/icons-material/Group";
-import { useNavigate } from "react-router-dom";
+import ChatRoundedIcon from "@mui/icons-material/ChatRounded";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function BottomNav() {
   const [value, setValue] = useState("home");
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname === "/" ? "" : location.pathname.slice(1);
+    setValue(path);
+  }, [location.pathname]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -45,6 +52,11 @@ function BottomNav() {
           label="Community"
           value="community"
           icon={<CommunityIcon />}
+        />
+        <BottomNavigationAction
+          label="Chat"
+          value="chat"
+          icon={<ChatRoundedIcon />}
         />
       </BottomNavigation>
     </Paper>
